@@ -58,7 +58,7 @@ async def get_volatility(
                 'endTime': end_ms,
                 'limit': limit
             }
-            url = 'https://api.binance.com/api/v3/klines'
+            url = 'https://api.binance.us/api/v3/klines'
             response = requests.get(url, params=params)
             response.raise_for_status()
             data = response.json()
